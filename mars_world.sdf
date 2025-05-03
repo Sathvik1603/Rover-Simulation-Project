@@ -1,0 +1,54 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="mars_world">
+
+    <!-- Light -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- Add gravity like Mars -->
+    <gravity>0 0 -3.71</gravity>
+
+    <!-- Add Rocks and Craters with unique names -->
+
+    <!-- Big Rock -->
+    <include>
+      <uri>model://LargeRock_Fall</uri>
+      <name>large_rock_fall1</name>
+      <pose>5 5 0 0 0 0</pose>
+    </include>
+
+    <!-- Small Rock -->
+    <include>
+      <uri>model://Small_Rock_Fall</uri>
+      <name>small_rock_fall1</name>
+      <pose>-3 7 0 0 0 0</pose>
+    </include>
+
+    <!-- Medium Rock -->
+    <include>
+      <uri>model://LargeRock_Fall</uri>
+      <name>large_rock_fall2</name>
+      <pose>-7 -5 0 0 0 0</pose>
+    </include>
+
+    <!-- Crater -->
+    <include>
+      <uri>model://Mars_Gale_Crater_Patch</uri>
+      <name>gale_crater_patch1</name>
+      <pose>10 -4 0 0 0 0</pose>
+    </include>
+
+    <!-- Another Crater -->
+    <include>
+      <uri>model://Mars_Gale_Crater_Patch</uri>
+      <name>gale_crater_patch2</name>
+      <pose>-8 6 0 0 0 0</pose>
+    </include>
+
+  </world>
+</sdf>
+
+
+
