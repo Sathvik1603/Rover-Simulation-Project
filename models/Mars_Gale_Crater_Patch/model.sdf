@@ -7,7 +7,7 @@
       <collision name='collision'>
         <geometry>
           <mesh>
-		        <uri>model://Mars_Gale_Crater_Patch/meshes/gale_crater_patch1.stl</uri>
+            <uri>file:///home/sathvik-merugu/mars_world_project/models/Mars_Gale_Crater_Patch/meshes/gale_crater_patch1.stl</uri>
           </mesh>
         </geometry>
       </collision>
@@ -15,18 +15,15 @@
         <cast_shadows>1</cast_shadows>
         <geometry>
           <mesh>
-		        <uri>model://Mars_Gale_Crater_Patch/meshes/gale_crater_patch1.stl</uri>
+            <uri>file:///home/sathvik-merugu/mars_world_project/models/Mars_Gale_Crater_Patch/meshes/gale_crater_patch1.stl</uri>
           </mesh>
         </geometry>
         <material>
-          <pbr>
-            <metal>
-              <albedo_map>model://Mars_Gale_Crater_Patch/materials/textures/sand_pebbles.png</albedo_map>
-            </metal>
-          </pbr>
-          <diffuse>1 1 1 1</diffuse>
+          <ambient>0.4 0.2 0.1 1</ambient>
+          <diffuse>0.4 0.2 0.1 1</diffuse>
         </material>
       </visual>
     </link>
   </model>
 </sdf>
+

@@ -2,53 +2,60 @@
 <sdf version="1.6">
   <world name="mars_world">
 
-    <!-- Light -->
+    <!-- Sunlight -->
     <include>
-      <uri>model://sun</uri>
+      <uri>https://fuel.gazebosim.org/1.0/openrobotics/models/Sun</uri>
     </include>
 
-    <!-- Add gravity like Mars -->
+    <!-- Mars gravity -->
     <gravity>0 0 -3.71</gravity>
 
-    <!-- Add Rocks and Craters with unique names -->
+    <!-- Rocks and Craters -->
 
-    <!-- Big Rock -->
+    <!-- Big Rock 1 -->
     <include>
-      <uri>model://LargeRock_Fall</uri>
+      <uri>file:///home/sathvik-merugu/mars_world_project/models/LargeRock_Fall</uri>
       <name>large_rock_fall1</name>
       <pose>5 5 0 0 0 0</pose>
     </include>
 
     <!-- Small Rock -->
     <include>
-      <uri>model://Small_Rock_Fall</uri>
+      <uri>file:///home/sathvik-merugu/mars_world_project/models/Small_Rock_Fall</uri>
       <name>small_rock_fall1</name>
       <pose>-3 7 0 0 0 0</pose>
     </include>
 
-    <!-- Medium Rock -->
+    <!-- Big Rock 2 -->
     <include>
-      <uri>model://LargeRock_Fall</uri>
+      <uri>file:///home/sathvik-merugu/mars_world_project/models/LargeRock_Fall</uri>
       <name>large_rock_fall2</name>
       <pose>-7 -5 0 0 0 0</pose>
     </include>
 
-    <!-- Crater -->
+    <!-- Gale Crater Patch 1 -->
     <include>
-      <uri>model://Mars_Gale_Crater_Patch</uri>
+      <uri>file:///home/sathvik-merugu/mars_world_project/models/Mars_Gale_Crater_Patch</uri>
       <name>gale_crater_patch1</name>
       <pose>10 -4 0 0 0 0</pose>
     </include>
 
-    <!-- Another Crater -->
+    <!-- Gale Crater Patch 2 -->
     <include>
-      <uri>model://Mars_Gale_Crater_Patch</uri>
+      <uri>file:///home/sathvik-merugu/mars_world_project/models/Mars_Gale_Crater_Patch</uri>
       <name>gale_crater_patch2</name>
       <pose>-8 6 0 0 0 0</pose>
     </include>
 
+    <!-- Lighting -->
+    <light type="directional" name="sun_light">
+      <cast_shadows>true</cast_shadows>
+      <pose>0 0 10 0 0 0</pose>
+      <diffuse>0.4 0.3 0.2 1</diffuse>
+      <specular>0.05 0.05 0.05 1</specular>
+      <direction>-0.5 -0.5 -1</direction>
+    </light>
+
   </world>
 </sdf>
-
-
 
