@@ -56,6 +56,13 @@
       <direction>-0.5 -0.5 -1</direction>
     </light>
 
+    <!-- Simple Bot -->
+    <include>
+      <uri>file:///home/sathvik-merugu/mars_world_project/models/simple_bot</uri>
+      <name>simple_bot1</name>
+      <pose>0 0 0.1 0 0 0</pose>
+    </include>
+
   </world>
 </sdf>
 
